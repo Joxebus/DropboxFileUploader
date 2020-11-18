@@ -66,7 +66,7 @@ public class FileUploaderService {
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             download.download(out);
 
-            System.out.printf("Saving copy on [%s] for image [%s] \n", DOWNLOAD_FOLDER, filename);
+            System.out.printf("Saving copy on [%s] for file [%s] \n", DOWNLOAD_FOLDER, filename);
             // Note: Verify you have this folder on your system or
             // change the code to create the folder if not exists
             FileOutputStream fos = new FileOutputStream(new File(DOWNLOAD_FOLDER, filename));
